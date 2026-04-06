@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Nửa trên màn hình dành cho Fragment A -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentA"
+        android:name="com.ntkhai.demofragment.FragmentA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Nửa dưới màn hình dành cho Fragment B -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentB"
+        android:name="com.ntkhai.demofragment.FragmentB"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
